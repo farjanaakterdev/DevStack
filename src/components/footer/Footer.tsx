@@ -1,81 +1,47 @@
-import logoText from '../../assets/logo-text.png'
-
-const PRODUCT_LINKS = ['Home', 'Technologies', 'Projects']
-const COMPANY_LINKS = ['About', 'Contact', 'Careers']
-const LEGAL_LINKS = ['Privacy Policy', 'Terms of Service']
 const SOCIAL_LINKS = ['GitHub', 'Twitter', 'LinkedIn']
-
-type FooterColumnProps = {
-  title: string
-  links: string[]
-}
-
-function FooterColumn({ title, links }: FooterColumnProps) {
-  return (
-    <div>
-      <h3 className="text-sm font-semibold text-gray-900">{title}</h3>
-      <ul className="mt-4 flex flex-col gap-3">
-        {links.map((link) => (
-          <li key={link}>
-            <a
-              href="#"
-              className="text-sm text-gray-600 transition-colors hover:text-purple-600"
-            >
-              {link}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
 
 function Footer() {
   return (
-    <footer className="border-t border-purple-100 bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-16">
-          <div className="max-w-sm">
-            <a href="#" className="flex items-center">
-              <img src={logoText} alt="Dev Stack" className="h-9 w-auto" />
-            </a>
-            <p className="mt-4 text-sm leading-relaxed text-gray-600">
-              Curated tools, technologies, and resources for developers building
-              modern software.
-            </p>
-            <div className="mt-6 flex items-center gap-4">
-              {SOCIAL_LINKS.map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="text-sm font-medium text-gray-600 transition-colors hover:text-purple-600"
-                >
+    <footer className="bg-white">
+      <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+        <div className="flex flex-col items-center text-center">
+          <a href="#" className="flex items-center gap-3">
+            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-brand text-sm font-bold text-white">
+              DS
+            </span>
+            <span className="text-lg font-semibold tracking-tight text-gray-900">
+              Dev <span className="text-pink-600">Stack</span>
+            </span>
+          </a>
+
+          <p className="mt-4 max-w-md text-sm leading-relaxed text-gray-500">
+            Curated tools, technologies, and resources for developers building
+            modern software.
+          </p>
+
+          <div className="mt-6 flex items-center gap-3 text-sm font-medium text-gray-600">
+            {SOCIAL_LINKS.map((social, index) => (
+              <div key={social} className="flex items-center gap-3">
+                {index > 0 && <span className="text-gray-300">•</span>}
+                <a href="#" className="transition-colors hover:text-purple-600">
                   {social}
                 </a>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-
-          <FooterColumn title="Product" links={PRODUCT_LINKS} />
-          <FooterColumn title="Company" links={COMPANY_LINKS} />
-          <FooterColumn title="Legal" links={LEGAL_LINKS} />
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-purple-100 pt-8 sm:flex-row">
-          <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Dev Stack. All rights reserved.
+        <div className="mx-auto mt-10 max-w-3xl border-t border-gray-200" />
+
+        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
+          <p className="text-sm text-gray-400">
+            © 2026 Dev Stack. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <a
-              href="#"
-              className="text-sm text-gray-500 transition-colors hover:text-purple-600"
-            >
+          <div className="flex items-center gap-5 text-sm text-gray-400">
+            <a href="#" className="transition-colors hover:text-gray-700">
               Privacy
             </a>
-            <a
-              href="#"
-              className="text-sm text-gray-500 transition-colors hover:text-purple-600"
-            >
+            <a href="#" className="transition-colors hover:text-gray-700">
               Terms
             </a>
           </div>
