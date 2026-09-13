@@ -1,3 +1,5 @@
+import logoText from '../../assets/logo-text.png'
+
 const PRODUCT_LINKS = ['Features', 'Pricing', 'Integrations', 'Roadmap']
 const COMPANY_LINKS = ['About', 'Blog', 'Careers', 'Contact']
 const LEGAL_LINKS = ['Privacy Policy', 'Terms of Service', 'Cookie Policy']
@@ -63,11 +65,8 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
           <div className="max-w-sm">
-            <a href="#" className="flex items-center gap-2">
-              <img src="/favicon.svg" alt="Dev Stack logo" className="h-9 w-9" />
-              <span className="text-lg font-bold tracking-tight text-gray-900">
-                Dev<span className="text-gradient-brand font-normal">Stack</span>
-              </span>
+            <a href="#" className="flex items-center">
+              <img src={logoText} alt="Dev Stack" className="h-9 w-auto" />
             </a>
             <p className="mt-4 text-sm leading-relaxed text-gray-600">
               A modern development stack to help you discover, explore, and
