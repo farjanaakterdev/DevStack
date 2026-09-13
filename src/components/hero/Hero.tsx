@@ -19,7 +19,7 @@ function Hero() {
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3 sm:mt-8 sm:justify-start">
             <a
               href="#"
-              className="flex-1 rounded-lg bg-gradient-brand px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90 sm:flex-none sm:px-7 sm:py-3.5"
+              className="flex-1 rounded-lg bg-gradient-to-r from-[#F97316] to-[#EC4899] px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90 sm:flex-none sm:px-7 sm:py-3.5"
             >
               Explore Technologies
             </a>
