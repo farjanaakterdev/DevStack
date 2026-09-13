@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="mx-auto flex max-w-7xl flex-col items-start gap-10 px-4 py-14 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:px-8 lg:py-24">
-        <div className="w-full max-w-2xl text-left">
+        <div className="w-full max-w-2xl text-center sm:text-left">
           <h1 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
             <span className="block text-gray-900">Build Your Ideal</span>
             <span className="block text-gradient-brand">
@@ -16,7 +16,7 @@ function Hero() {
             them side by side, and put together the stack that fits your next
             project.
           </p>
-          <div className="mt-7 flex flex-wrap items-center gap-3 sm:mt-8">
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-3 sm:mt-8 sm:justify-start">
             <a
               href="#"
               className="flex-1 rounded-lg bg-gradient-brand px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90 sm:flex-none sm:px-7 sm:py-3.5"
@@ -36,7 +36,7 @@ function Hero() {
           <img
             src={bannerStack}
             alt="Dev Stack banner illustration"
-            className="w-full max-w-xs sm:max-w-md lg:max-w-none"
+            className="w-full max-w-sm sm:max-w-md lg:max-w-none"
           />
         </div>
       </div>
