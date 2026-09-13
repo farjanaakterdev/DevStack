@@ -14,7 +14,7 @@ function App() {
         <TechnologiesSection />
       </main>
       <Footer />
-      <ToastContainer position="bottom-right" autoClose={3000} />
+      <ToastContainer position="top-center" autoClose={3000} />
     </div>
   )
 }

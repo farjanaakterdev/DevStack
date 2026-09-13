@@ -64,7 +64,7 @@ function TechnologyCard({ technology, isSelected, onAdd }: TechnologyCardProps) 
         className={`mt-4 self-start rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${
           isSelected
             ? 'cursor-not-allowed bg-emerald-100 text-emerald-700'
-            : 'bg-black text-white hover:bg-gray-800'
+            : 'bg-gradient-brand text-white hover:opacity-90'
         }`}
       >
         {isSelected ? '✓ Added to Stack' : 'Add to Stack'}
