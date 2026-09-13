@@ -140,6 +140,16 @@
     "badge": "Containers"
   },
   {
+    "id": "mysql",
+    "name": "MySQL",
+    "category": "Database",
+    "description": "A widely used open-source relational database management system known for speed and reliability.",
+    "icon": "https://icon.icepanel.io/Technology/svg/MySQL.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Top SQL"
+  },
+  {
     "id": "go",
     "name": "Go",
     "category": "Language",
