@@ -5,8 +5,6 @@ import TechnologyCard from './TechnologyCard'
 import YourStack from './YourStack'
 import type { Technology } from './types'
 
-const EXCLUDED_TECH_ID = 'css3'
-
 function TechnologiesSection() {
   const [technologies, setTechnologies] = useState<Technology[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -28,10 +26,6 @@ function TechnologiesSection() {
       active = false
     }
   }, [])
-
-  const visibleTechnologies = technologies.filter(
-    (technology) => technology.id !== EXCLUDED_TECH_ID,
-  )
 
   const handleAdd = (technology: Technology) => {
     if (selected.some((item) => item.id === technology.id)) {
@@ -81,7 +75,7 @@ function TechnologiesSection() {
 
       <div className="mt-10 flex flex-col gap-8 lg:flex-row">
         <div className="grid flex-1 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {visibleTechnologies.map((technology) => (
+          {technologies.map((technology) => (
             <TechnologyCard
               key={technology.id}
               technology={technology}

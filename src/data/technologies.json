@@ -104,7 +104,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly building custom designs without leaving HTML.",
-    "icon": "https://icon.icepanel.io/Technology/svg/TailwindCSS.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -164,7 +164,7 @@
     "name": "VS Code",
     "category": "Tools",
     "description": "A lightweight yet powerful code editor with a rich extension ecosystem.",
-    "icon": "https://icon.icepanel.io/Technology/svg/VisualStudioCode.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Editor"
