@@ -41,7 +41,11 @@ function TechnologiesSection() {
         </div>
 
         <div className="lg:w-80 xl:w-96">
-          <YourStack selected={selected} onRemove={handleToggle} />
+          <YourStack
+            selected={selected}
+            onRemove={handleToggle}
+            onRemoveAll={() => setSelected([])}
+          />
         </div>
       </div>
     </section>
