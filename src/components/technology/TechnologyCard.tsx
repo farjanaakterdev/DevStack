@@ -61,7 +61,7 @@ function TechnologyCard({ technology, isSelected, onAdd }: TechnologyCardProps) 
         type="button"
         aria-disabled={isSelected}
         onClick={() => onAdd(technology)}
-        className={`mt-4 w-full rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${
+        className={`mt-4 w-full rounded-lg px-5 py-2.5 text-sm font-semibold transition-colors ${
           isSelected
             ? 'cursor-not-allowed bg-emerald-100 text-emerald-700'
             : 'bg-black text-white hover:bg-gray-800'
