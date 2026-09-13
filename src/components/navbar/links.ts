@@ -1,0 +1,1 @@
+export const NAV_LINKS = ['Home', 'Technologies', 'Projects', 'About', 'Contact'] as const
