@@ -32,7 +32,7 @@ function FooterColumn({ title, links }: FooterColumnProps) {
 
 function FooterBottomBar() {
   return (
-    <div className="flex flex-nowrap items-center justify-between gap-3 border-t border-gray-200 py-5 sm:gap-4 sm:py-6">
+    <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-gray-200 py-5 sm:gap-x-4 sm:py-6">
       <p className="text-[11px] whitespace-nowrap text-gray-500 sm:text-xs">
         © 2026 Dev Stack. All rights reserved.
       </p>
