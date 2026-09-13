@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
 import technologiesUrl from '../../data/technologies.json?url'
 import TechnologyCard from './TechnologyCard'
+import SectionHeading from './SectionHeading'
 import YourStack from './YourStack'
 import type { Technology } from './types'
 
@@ -49,11 +50,7 @@ function TechnologiesSection() {
   if (isLoading) {
     return (
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Explore Technologies
-          </h2>
-        </div>
+        <SectionHeading />
         <div className="mt-10 flex flex-col items-center justify-center gap-4 py-24">
           <div className="h-12 w-12 animate-spin rounded-full border-4 border-purple-200 border-t-purple-600" />
           <p className="text-gray-600">Loading technologies...</p>
@@ -64,14 +61,7 @@ function TechnologiesSection() {
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-      <div className="max-w-2xl">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Explore Technologies
-        </h2>
-        <p className="mt-3 text-gray-600">
-          Pick the tools you love and build your ideal development stack.
-        </p>
-      </div>
+      <SectionHeading />
 
       <div className="mt-10 flex flex-col gap-8 lg:flex-row">
         <div className="grid flex-1 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
