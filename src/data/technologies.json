@@ -140,6 +140,16 @@
     "badge": "Containers"
   },
   {
+    "id": "go",
+    "name": "Go",
+    "category": "Language",
+    "description": "A statically typed, compiled language built for concurrency and high-performance systems.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Go.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
     "id": "git",
     "name": "Git",
     "category": "Tools",

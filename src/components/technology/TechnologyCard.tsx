@@ -3,7 +3,7 @@ import type { Technology } from './types'
 type TechnologyCardProps = {
   technology: Technology
   isSelected: boolean
-  onToggle: (technology: Technology) => void
+  onAdd: (technology: Technology) => void
 }
 
 const DIFFICULTY_STYLES: Record<Technology['difficulty'], string> = {
@@ -12,7 +12,7 @@ const DIFFICULTY_STYLES: Record<Technology['difficulty'], string> = {
   Advanced: 'bg-rose-50 text-rose-700',
 }
 
-function TechnologyCard({ technology, isSelected, onToggle }: TechnologyCardProps) {
+function TechnologyCard({ technology, isSelected, onAdd }: TechnologyCardProps) {
   return (
     <article className="flex flex-col rounded-2xl border border-purple-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
       <div className="flex items-start justify-between">
@@ -59,14 +59,15 @@ function TechnologyCard({ technology, isSelected, onToggle }: TechnologyCardProp
 
       <button
         type="button"
-        onClick={() => onToggle(technology)}
+        aria-disabled={isSelected}
+        onClick={() => onAdd(technology)}
         className={`mt-4 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${
           isSelected
-            ? 'bg-purple-100 text-purple-700 hover:bg-purple-200'
-            : 'bg-purple-600 text-white hover:bg-purple-700'
+            ? 'cursor-not-allowed bg-emerald-100 text-emerald-700'
+            : 'bg-gradient-brand text-white hover:opacity-90'
         }`}
       >
-        {isSelected ? 'Added to Stack' : 'Add to Stack'}
+        {isSelected ? '✓ Added to Stack' : 'Add to Stack'}
       </button>
     </article>
   )

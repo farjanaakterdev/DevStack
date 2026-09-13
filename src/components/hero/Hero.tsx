@@ -7,7 +7,7 @@ function Hero() {
         <div className="max-w-xl text-center lg:text-left">
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
             Build your next big idea with{' '}
-            <span className="bg-gradient-to-r from-purple-600 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent">
+            <span className="text-gradient-brand">
               Dev Stack
             </span>
           </h1>
@@ -19,7 +19,7 @@ function Hero() {
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
             <a
               href="#"
-              className="w-full rounded-full bg-gradient-to-r from-purple-600 to-indigo-500 px-7 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-purple-600/25 transition-opacity hover:opacity-90 sm:w-auto"
+              className="w-full rounded-full bg-gradient-brand px-7 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-purple-600/25 transition-opacity hover:opacity-90 sm:w-auto"
             >
               Explore Technologies
             </a>

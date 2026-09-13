@@ -1,13 +1,20 @@
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import Footer from './components/footer'
 import Hero from './components/hero'
 import Navbar from './components/navbar'
 import TechnologiesSection from './components/technology'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="flex min-h-screen flex-col bg-white">
       <Navbar />
-      <Hero />
-      <TechnologiesSection />
+      <main className="flex-1">
+        <Hero />
+        <TechnologiesSection />
+      </main>
+      <Footer />
+      <ToastContainer position="bottom-right" autoClose={3000} />
     </div>
   )
 }
