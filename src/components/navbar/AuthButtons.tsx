@@ -1,7 +1,7 @@
 const TEXT_BUTTON_CLASSES =
   'px-2 py-1.5 text-sm font-semibold text-gray-700 transition-colors hover:text-purple-600 sm:px-3'
 const PILL_BUTTON_CLASSES =
-  'rounded-full bg-gradient-brand px-4 py-1.5 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90 sm:px-5'
+  'rounded-full bg-[#D91B7E] px-4 py-1.5 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90 sm:px-5'
 
 function AuthButtons() {
   return (

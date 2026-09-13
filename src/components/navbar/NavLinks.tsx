@@ -11,7 +11,11 @@ function NavLinks({ className = '' }: NavLinksProps) {
         <li key={link}>
           <a
             href="#"
-            className="text-sm font-medium text-gray-600 transition-colors hover:text-purple-600"
+            className={`text-sm font-medium transition-colors ${
+              link === 'Home'
+                ? 'text-[#DB2777]'
+                : 'text-gray-600 hover:text-purple-600'
+            }`}
           >
             {link}
           </a>
