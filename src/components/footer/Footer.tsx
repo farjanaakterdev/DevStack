@@ -30,6 +30,30 @@ function FooterColumn({ title, links }: FooterColumnProps) {
   )
 }
 
+function FooterBottomBar() {
+  return (
+    <div className="flex flex-nowrap items-center justify-between gap-3 border-t border-gray-200 py-5 sm:gap-4 sm:py-6">
+      <p className="text-[11px] whitespace-nowrap text-gray-500 sm:text-xs">
+        © 2026 Dev Stack. All rights reserved.
+      </p>
+      <div className="flex flex-nowrap items-center gap-4 sm:gap-5">
+        <a
+          href="#"
+          className="text-[11px] whitespace-nowrap text-gray-500 transition-colors hover:text-gray-700 sm:text-xs"
+        >
+          Privacy
+        </a>
+        <a
+          href="#"
+          className="text-[11px] whitespace-nowrap text-gray-500 transition-colors hover:text-gray-700 sm:text-xs"
+        >
+          Terms
+        </a>
+      </div>
+    </div>
+  )
+}
+
 function Footer() {
   return (
     <footer className="bg-white">
@@ -62,18 +86,8 @@ function Footer() {
 
           <div className="mx-auto mt-10 max-w-3xl border-t border-gray-200" />
 
-          <div className="mt-8 flex flex-col items-center gap-3">
-            <p className="text-sm text-gray-400">
-              © 2026 Dev Stack. All rights reserved.
-            </p>
-            <div className="flex items-center gap-5 text-sm text-gray-400">
-              <a href="#" className="transition-colors hover:text-gray-700">
-                Privacy
-              </a>
-              <a href="#" className="transition-colors hover:text-gray-700">
-                Terms
-              </a>
-            </div>
+          <div className="mt-8">
+            <FooterBottomBar />
           </div>
         </div>
       </div>
@@ -107,24 +121,8 @@ function Footer() {
             <FooterColumn title="Legal" links={LEGAL_LINKS} />
           </div>
 
-          <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-purple-100 pt-8 sm:flex-row">
-            <p className="text-sm text-gray-500">
-              © 2026 Dev Stack. All rights reserved.
-            </p>
-            <div className="flex items-center gap-6">
-              <a
-                href="#"
-                className="text-sm text-gray-500 transition-colors hover:text-gray-700"
-              >
-                Privacy
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-500 transition-colors hover:text-gray-700"
-              >
-                Terms
-              </a>
-            </div>
+          <div className="mt-10">
+            <FooterBottomBar />
           </div>
         </div>
       </div>
